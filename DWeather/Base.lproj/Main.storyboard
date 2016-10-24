@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VaP-Az-zPf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fhe-g2-Gcf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCK-2n-G7Q">
@@ -72,11 +72,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ysf-pn-Z1q">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="80" id="IbW-Xn-NUV">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="80" id="IbW-Xn-NUV" customClass="WeatherCell" customModule="DWeather" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="768" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IbW-Xn-NUV" id="zug-Lg-GXg">
-                                            <frame key="frameInset" width="375" height="80"/>
+                                            <frame key="frameInset" width="768" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Us-ke-Jrw">
@@ -128,6 +128,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="lco-Sz-TCa" id="VaS-rK-FM6"/>
+                                            <outlet property="highTemp" destination="aIj-Ml-2e3" id="HYM-DZ-q1S"/>
+                                            <outlet property="lowTemp" destination="PwR-nO-hIE" id="gMd-u0-ETa"/>
+                                            <outlet property="weatherIcon" destination="5Us-ke-Jrw" id="dE2-Ff-BYD"/>
+                                            <outlet property="weatherType" destination="oQH-00-FaW" id="Y3z-Py-JSt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

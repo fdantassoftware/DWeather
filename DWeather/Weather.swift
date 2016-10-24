@@ -67,7 +67,7 @@ class Weather {
                     let dicWeather = arrayWeather[0]
                     if let weather = dicWeather["main"] as? String {
                         self._weatherType = weather
-                        print(weather)
+                        
                     }
                 }
                 
@@ -77,8 +77,5 @@ class Weather {
         }
         
     }
-    
-    
-    
-    
+ 
 }
